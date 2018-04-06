@@ -10,7 +10,7 @@ import PortafolioItem from '../componentes/PortafolioItem' // COMPONENTE HIJO
 const AppRouter = () => (
     <BrowserRouter>
     <div>
-            <Cabecera/>
+            <Cabecera subtitulo='Un subtitulo'/>
         <Switch>
             <Route path="/" component={Hogar} exact={true} />
             <Route path="/portafolio" component={Portafolio} exact={true} />

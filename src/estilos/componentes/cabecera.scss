@@ -1,0 +1,28 @@
+
+.cabecera-nota {
+    color:whitesmoke; 
+    background:$negro; 
+    padding: $talla-s 0;
+    margin-bottom: $talla-xs;
+  
+    
+}    
+.cabecera__titulo {
+    font-size: $talla-l; 
+    color: skyblue;
+    font-family: $oswald;
+    margin: 0px; 
+}
+.cabecera__subtitulo { 
+    color: $mora; 
+    font-weight: 500;
+    font-size: $talla-m;
+    margin:0; 
+}
+.nav-link {
+    color: #DAF7A6 ;
+}
+
+@media (min-width: $escritorio-breakpoint) {
+    .cabecera-nota {margin-bottom: $talla-xl;}
+}
