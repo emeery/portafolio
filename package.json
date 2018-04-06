@@ -1,13 +1,15 @@
 {
-  "name": "Notes",
+  "name": "expendio",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Gerardo Bautista",
   "license": "MIT",
   "scripts": {
-    "sirve": "live-server public/",
-    "mira": "webpack",
-    "dev-sirve": "webpack-dev-server"
+    "build:dev": "webpack",
+    "build:prod": "webpack -p --env production",
+    "dev-server": "webpack-dev-server",
+    "test": "jest --config=jest.config.json",
+    "start": "node server/server.js"
   },
   "dependencies": {
     "babel-cli": "6.24.1",
@@ -23,6 +25,7 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-modal": "^3.1.12",
+    "react-router-dom": "^4.2.2",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.20.1",
     "validator": "^9.4.0",
@@ -30,4 +33,3 @@
     "webpack-dev-server": "^2.11.1"
   }
 }
-
