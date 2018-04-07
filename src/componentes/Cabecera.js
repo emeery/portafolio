@@ -11,7 +11,7 @@ const Cabecera = (props) => (
     <div>
         <h1 className='cabecera__titulo'
         >{props.titulo}</h1>
-    
+        <hr></hr>
         {props.subtitulo && 
         <h3
         className='cabecera__subtitulo'

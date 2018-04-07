@@ -12,7 +12,6 @@ const AppRouter = () => (
     <BrowserRouter>
     <div>
             <Cabecera 
-            subtitulo='Un subtitulo'
             />
         
         <Switch>

@@ -5,27 +5,43 @@
     padding: $talla-s 0;
     margin-bottom: $talla-xs;
     height: 35rem;
-    background-image: url(./../imagenes/aurora.jpg);
+    background-image: url(./../imagenes/forest.jpg);
+    background-position: center;
     //position: absolute;
 }    
 .cabecera__info {
     text-align: center;
+    margin-top: 5rem
     //position: relative;
 }
 .cabecera__titulo {
-    font-size: $talla-l; 
-    color: skyblue;
+    font-size: $talla-xl; 
+    color: teal;
     font-family: $oswald;
     margin: 0px; 
 }
 .cabecera__subtitulo { 
-    color: $mora; 
+    color: royalblue; 
     font-weight: 500;
-    font-size: $talla-m;
+    font-family: $dosis;
+    font-size: 2rem;
     margin:0; 
 }
+hr{
+    width: 150px;
+    //text-align: left;
+    padding-left: 50px;
+    //margin-top: 3px;
+    margin: auto;
+    float: center;
+    border: 0; 
+    height: 2px;
+    background: whitesmoke;
+    //background-image: linear-gradient(to right, #ccc, salmon, #ccc);
+}
 .nav-link {
-    color: #DAF7A6 ;
+    color: cadetblue;
+    outline: none;
 }
 
 @media (min-width: $escritorio-breakpoint) {
