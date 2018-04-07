@@ -1,16 +1,22 @@
 
-.hogar-contenedor {
+.acerca-contenedor {
     background-color: lightslategray;
     height: 60rem;
     margin-top: -45px;
     background-image: url(./../imagenes/aurora.jpg);
 }
-.hogar__titulo {
+.acerca__titulo {
     color: lightgrey;
     font-size: $talla-xl;
-    text-align: center;
     font-family: $oswald;
-    //margin: auto;
-    //display: flex;
+    text-align: center;
+    position: absolute;
     top: 20rem; left:0; bottom:0; right:0;
+}
+.acerca__nombre {
+    color: lightsteelblue;
+    font-family: $oswald;
+    font-size: $talla-xl;
+    text-align: center;
+
 }

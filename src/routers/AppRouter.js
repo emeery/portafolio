@@ -2,17 +2,21 @@ import React from 'react';
 import {
 BrowserRouter, Switch, Route, Link, NavLink} from 'react-router-dom';
 import Cabecera from '../componentes/Cabecera';
-import Contacto from '../componentes/Contacto';
-import Hogar from '../componentes/Hogar';
-import PaginaNoEncontrada from '../componentes/PaginaNoEncontrada';
+import Acerca from '../componentes/Acerca';
 import Portafolio from '../componentes/Portafolio';
 import PortafolioItem from '../componentes/PortafolioItem' // COMPONENTE HIJO
+import Contacto from '../componentes/Contacto';
+import PaginaNoEncontrada from '../componentes/PaginaNoEncontrada';
+
 const AppRouter = () => (
     <BrowserRouter>
     <div>
-            <Cabecera subtitulo='Un subtitulo'/>
+            <Cabecera 
+            subtitulo='Un subtitulo'
+            />
+        
         <Switch>
-            <Route path="/" component={Hogar} exact={true} />
+            <Route path="/" component={Acerca} exact={true} />
             <Route path="/portafolio" component={Portafolio} exact={true} />
             <Route path="/portafolio/:id" component={PortafolioItem}/>
             <Route path="/contacto" component={Contacto} />

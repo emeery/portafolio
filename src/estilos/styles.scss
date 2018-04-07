@@ -1,8 +1,11 @@
 @import './base/_configuraciones';
 @import './base/base';
-@import './componentes/cabecera';
 @import './componentes/contenedor';
-@import './componentes/hogar';
+
+@import './componentes/cabecera';
+@import './componentes/acerca';
+@import './componentes/portafolio';
+@import './componentes/contacto';
 
 // @import './componentes/boton';
 // @import './componentes/widget';
