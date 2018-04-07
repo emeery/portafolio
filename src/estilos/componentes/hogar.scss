@@ -3,11 +3,14 @@
     background-color: lightslategray;
     height: 60rem;
     margin-top: -45px;
-    //background-image:url(./../imagenes/aurora.jpg) no-repeat center center fixed;
+    background-image: url(./../imagenes/aurora.jpg);
 }
 .hogar__titulo {
     color: lightgrey;
-    font-size: $talla-l;
+    font-size: $talla-xl;
     text-align: center;
-    font-family: $anton;
+    font-family: $oswald;
+    //margin: auto;
+    //display: flex;
+    top: 20rem; left:0; bottom:0; right:0;
 }

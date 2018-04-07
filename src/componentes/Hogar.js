@@ -1,8 +1,13 @@
 import React from 'react';
-//var auroraImagen = require('../public/imagenes/aurora.jpg');
-const Hogar = () => {
-    return(<div className='hogar-contenedor'>
+import auroraImagen from './../imagenes/aurora.jpg';
+var envoltura = {
+    backgroundImage: `url(${auroraImagen})`
+};
+const Hogar = (props) => {
+    return( <div 
+        className='hogar-contenedor' >
+        <h1>{props.nombre}</h1>
         <h2 className='hogar__titulo'
-        >Bienvenido a casa.</h2>
+        > Acerca .</h2>
     </div>);
 }; export default Hogar;
