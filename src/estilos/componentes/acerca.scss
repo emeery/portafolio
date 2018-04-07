@@ -12,7 +12,14 @@
     text-align: center;
     top: 30rem; left:0; bottom:0; right:0;
 }
-.acerca__nombre {
+.acerca-pagina__titulo {
+    color: $sandia;
+    font-size: $talla-xl;
+    font-family: $right;
+    text-align: center;
+    top: 30rem; left:0; bottom:0; right:0;
+}
+.acerca__nombre {   
     color: lightsteelblue;
     font-family: $oswald;
     font-size: $talla-xl;
@@ -29,10 +36,14 @@ section {
 }
 // .bio {
 //     background-color: black;
-// }
-.card { background-color: black; text-align: center; margin-top: -16px; margin-bottom: 16px; padding-bottom:5px; 
+//      
+.card { border-color: orange; text-align: center; margin-top: -16px; margin-bottom: 16px; padding-bottom:5px; 
+    .card-title { font-size: $talla-l; }
+    .card-text { font-size: $talla-m }
     .fa-desktop {color:lightblue; cursor: pointer; font-size:8em; padding-bottom:10px; &:hover {color: lightgreen; } }
     .fa-folder-open {color:lightblue; cursor: pointer; font-size:8em; padding-bottom:20px; &:hover {color: lightgreen; } }
     .fa-envelope-o {color:lightblue; cursor: pointer; font-size:8em; padding-bottom:20px; &:hover {color: lightgreen; } }
     p{font-size:2vh; font-family: $oswald}
-    h4{color:lightseagreen; font-size:4vh; font-family: $oswald;} }
+    h4{color:lightseagreen; font-size:4vh; font-family: $oswald;}
+    
+}

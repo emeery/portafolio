@@ -3,8 +3,9 @@ import React from 'react';
 class Acerca extends React.Component {
     state = {nombre:'Gerardo'}
     render() {
-        return (
-            <div >
+        return (<div>
+
+            <h1 className='acerca-pagina__titulo' > Acerca </h1>
             <div className='bio'>
                 <div className="card-group">
                 <div className="card">
@@ -18,7 +19,7 @@ class Acerca extends React.Component {
                     
                     <p className="card-text">INGENERIA EN COMPUTACIÓN,
                     (<span style={{color:'lightblue'}}>UNAM</span>), 2011/2016.</p>
-                    
+
                     <p className="card-text">
                     <small className="text-muted">Last updated 3 mins ago</small>
                     </p>
