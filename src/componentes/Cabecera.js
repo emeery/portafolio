@@ -4,9 +4,10 @@ import {NavLink} from 'react-router-dom';
 // y la unica fuente de luz que despedía 3#sx1$. dotted edge 
 
 const Cabecera = (props) => (
-    <div 
+<div 
     className='cabecera-nota'>
     
+    <div className='cabecera__info'>
     <div>
         <h1 className='cabecera__titulo'
         >{props.titulo}</h1>
@@ -16,7 +17,6 @@ const Cabecera = (props) => (
         className='cabecera__subtitulo'
         >{props.subtitulo} </h3>
         }
-    
     </div>
     
     <NavLink 
@@ -41,6 +41,8 @@ const Cabecera = (props) => (
     > Contacto 
     </NavLink>
     </div>
+
+</div>
 
 ); export default Cabecera;
 

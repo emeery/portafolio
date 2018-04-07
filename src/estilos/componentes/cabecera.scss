@@ -1,18 +1,23 @@
-
+// color naranja soda :#E74C3C;
 .cabecera-nota {
     color:whitesmoke; 
     background:$negro; 
     padding: $talla-s 0;
     margin-bottom: $talla-xs;
+    height: 35rem;
+    background-image: url(./../imagenes/aurora.jpg);
+    //position: absolute;
 }    
-
+.cabecera__info {
+    text-align: center;
+    //position: relative;
+}
 .cabecera__titulo {
     font-size: $talla-l; 
     color: skyblue;
     font-family: $oswald;
     margin: 0px; 
 }
-
 .cabecera__subtitulo { 
     color: $mora; 
     font-weight: 500;
