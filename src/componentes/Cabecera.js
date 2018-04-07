@@ -17,7 +17,9 @@ const Cabecera = (props) => (
             >{props.subtitulo} </h3>
             }
             </div>
-    
+            <div
+            className='espacio-cabecera'
+            ></div>
         <NavLink 
             to='/' 
             className='nav-link' 

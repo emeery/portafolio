@@ -1,4 +1,4 @@
-// color naranja soda :#E74C3C;
+
 .cabecera-nota {
     color:whitesmoke; 
     background:$negro; 
@@ -42,8 +42,12 @@ hr{
 .nav-link {
     color: cadetblue;
     outline: none;
+    
 }
-
+.espacio-cabecera {
+    margin-top: 5rem;
+    background-color: rosybrown;
+}
 @media (min-width: $escritorio-breakpoint) {
     .cabecera-nota {margin-bottom: $talla-xl;}
 }

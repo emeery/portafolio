@@ -1,9 +1,9 @@
 // word-wrap: break-word;
 .acerca-contenedor {
-    background-color: whitesmoke;
+    background-color: $negro;
     height: 60rem;
     margin-top: -45px;
-    position: absolute
+    //position: absolute
 }
 .acerca__titulo {
     color: lightgrey;
@@ -37,9 +37,14 @@ section {
 // .bio {
 //     background-color: black;
 //      
-.card { border-color: orange; text-align: center; margin-top: -16px; margin-bottom: 16px; padding-bottom:5px; 
+.card { border-color: $sandia; text-align: center; //margin-top: -16px; 
+    height: 15rem;
+    background-color: $negro;
+    //margin-bottom: 16px; padding-bottom:5px; 
+    .card-block { padding-top: $talla-m; }
     .card-title { font-size: $talla-l; }
-    .card-text { font-size: $talla-m }
+    .card-text { font-size: $talla-m; color: whitesmoke;}
+    //.card-block { }
     .fa-desktop {color:lightblue; cursor: pointer; font-size:8em; padding-bottom:10px; &:hover {color: lightgreen; } }
     .fa-folder-open {color:lightblue; cursor: pointer; font-size:8em; padding-bottom:20px; &:hover {color: lightgreen; } }
     .fa-envelope-o {color:lightblue; cursor: pointer; font-size:8em; padding-bottom:20px; &:hover {color: lightgreen; } }
