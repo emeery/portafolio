@@ -6,38 +6,38 @@ class Acerca extends React.Component {
         return (
    
           
-      <div class="card-deck">
+      <div className="card-deck">
       
-          <div class="card">
-          <div class="card-body">
+          <div className="card">
+          <div className="card-body">
           <center>
                 <i className="fa fa-desktop fa-5x" aria-hidden="true"></i>
           </center>
-            <h5 class="card-title">Estudios</h5>
-            <p class="card-text"> 
+            <h5 className="card-title">Estudios</h5>
+            <p className="card-text"> 
             INGENIERIA EN COMPUTACION.</p>
-            <p class="card-text"> 
+            <p className="card-text"> 
             2011/2016.</p>
 
           </div>
           
         </div>
         
-        <div class="card">
-          <div class="card-body">
+        <div className="card">
+          <div className="card-body">
             <center>
                 <i className="fa fa-folder-open fa-5x" aria-hidden="true"></i>
             </center>
-            <h5 class="card-title"> Lenguajes</h5>
-            <p class="card-text"> 
+            <h5 className="card-title"> Lenguajes</h5>
+            <p className="card-text"> 
              JAVASCRIPT (<span>ES6</span>)  - SASS - 
             </p>
             
-            <p class="card-text"> 
+            <p className="card-text"> 
             REACT (<span>REDUX, WEBPACK, JEST</span>)
             </p>
 
-            <p class="card-text"> 
+            <p className="card-text"> 
             MySQL - NoSQL
             </p>
           
@@ -45,13 +45,13 @@ class Acerca extends React.Component {
           
         </div>
         
-        <div  class="card">
-          <div class="card-body">
+        <div  className="card">
+          <div className="card-body">
           <center>
-                  <i class="fa fa-flask fa-5x" aria-hidden="true"></i>
+                  <i className="fa fa-flask fa-5x" aria-hidden="true"></i>
           </center>
-            <h5 class="card-title">Herramientas</h5>
-            <p class="card-text">GIT, BASH, HEROKU</p>
+            <h5 className="card-title">Herramientas</h5>
+            <p className="card-text">GIT, BASH, HEROKU</p>
           </div>
           
         </div>
