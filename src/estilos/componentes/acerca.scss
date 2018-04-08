@@ -1,10 +1,10 @@
 // word-wrap: break-word;
-.acerca-contenedor {
-    background-color: $negro;
-    height: 60rem;
-    margin-top: -45px;
-    //position: absolute
-}
+// .acerca-contenedor {
+//     background-color: $negro;
+//     height: 30rem;
+//     margin-top: -45px;
+//     //position: absolute
+// }
 .acerca__titulo {
     color: lightgrey;
     font-size: $talla-xl;
@@ -26,19 +26,11 @@
     font-size: $talla-xl;
     text-align: center;
 }
-section {
-    display: block;
-    margin: 0 auto 1em;
-    height: 150px;
-    width: 100%;
-    border-radius: .2em;
-    position: relative;
-    color: white;
-}
-.card-deck {
+// .card-deck {
     
     .card { background-color:$negro; border-bottom-color: orange; 
         border-width: medium; height: 29rem; padding-top: -10px;
+        display: flex;
     }
     .card-title { 
         font-size: $talla-l; color: lightblue;
@@ -61,7 +53,7 @@ section {
             
             &:hover {color: lightgreen; }
         }
-}
+
 // .bio {
 //     background-color: black;
 //      

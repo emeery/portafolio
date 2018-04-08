@@ -4,7 +4,7 @@ class Acerca extends React.Component {
     state = {nombre:'Gerardo'}
     render() {
         return (
-    <div className='acerca-contenedor' >
+   
           
       <div class="card-deck">
       
@@ -52,7 +52,7 @@ class Acerca extends React.Component {
           
         
 
-      </div>
+      
             
     </div>
         

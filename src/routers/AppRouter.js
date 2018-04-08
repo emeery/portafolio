@@ -10,7 +10,7 @@ import PaginaNoEncontrada from '../componentes/PaginaNoEncontrada';
 
 const AppRouter = () => (
     <BrowserRouter>
-    <div>
+    <div >
             <Cabecera 
             
             />
