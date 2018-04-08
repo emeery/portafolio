@@ -14,27 +14,35 @@ class Acerca extends React.Component {
                 <i className="fa fa-desktop fa-5x" aria-hidden="true"></i>
           </center>
             <h5 class="card-title">Estudios</h5>
-            <p class="card-text"> Ingeniería en Computación.</p>
+            <p class="card-text"> 
+            INGENIERIA EN COMPUTACION.</p>
+            <p class="card-text"> 
+            2011/2016.</p>
+
           </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
-          </div>
+          
         </div>
         
         <div class="card">
           <div class="card-body">
-          <center>
+            <center>
                 <i className="fa fa-folder-open fa-5x" aria-hidden="true"></i>
-          </center>
-            <h5 class="card-title">Lenguajes</h5>
-            <p class="card-text">JAVASCRIPT(ES6) . 
-            REACT . 
-            SASS . 
-            MySQL . JEST. REDUX</p>
+            </center>
+            <h5 class="card-title"> Lenguajes</h5>
+            <p class="card-text"> 
+             JAVASCRIPT (<span>ES6</span>)  - SASS - 
+            </p>
+            
+            <p class="card-text"> 
+            REACT (<span>REDUX, WEBPACK, JEST</span>)
+            </p>
+
+            <p class="card-text"> 
+            MySQL - NoSQL
+            </p>
+          
           </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
-          </div>
+          
         </div>
         
         <div  class="card">
@@ -43,11 +51,9 @@ class Acerca extends React.Component {
                   <i class="fa fa-flask fa-5x" aria-hidden="true"></i>
           </center>
             <h5 class="card-title">Herramientas</h5>
-            <p class="card-text">This i</p>
+            <p class="card-text">GIT, BASH, HEROKU</p>
           </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
-          </div>
+          
         </div>
           
         

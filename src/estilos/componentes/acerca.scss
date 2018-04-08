@@ -37,20 +37,23 @@
         font-family: $anton; text-align: center;
     }
     .card-text {
-        color: navajowhite; font-family: $oswald;
-        font-size: 2rem; text-align: center;
+        color: navajowhite; font-family: $yanone;
+        font-size: 20px; text-align: center;
+        
     }
+    span { color: lightcoral; }
+
     .text-muted { font-family: $oswald; }
     .fa-desktop {color:lightblue; cursor: pointer; 
-             
+        margin-bottom: $talla-l; 
             &:hover {color: lightgreen; } 
         }
     .fa-folder-open {color:lightblue; cursor: pointer; 
-            
+        margin-bottom: $talla-l; 
             &:hover {color: lightgreen; } 
         }
     .fa-flask {color:lightblue; cursor: pointer;
-            
+        margin-bottom: $talla-l; 
             &:hover {color: lightgreen; }
         }
 
