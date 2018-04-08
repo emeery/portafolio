@@ -3,70 +3,62 @@ import React from 'react';
 class Acerca extends React.Component {
     state = {nombre:'Gerardo'}
     render() {
-        return (<div 
-          className='acerca-contenedor'      
-          >
-
-            <h1 
-            className='acerca-pagina__titulo' 
-            > Acerca </h1>
-            
-            <div className='bio'>
-                <div className="card-group">
-                <div className="card">
-                
-                <center>
+        return (
+    <div className='acerca-contenedor' >
+          
+      <div class="card-deck">
+      
+          <div class="card">
+          <div class="card-body">
+          <center>
                 <i className="fa fa-desktop fa-5x" aria-hidden="true"></i>
-                </center>
-                
-                  <div className="card-block">
-                    <h4 className="card-title">Estudios.</h4>
-                    
-                    <p className="card-text">INGENERIA EN COMPUTACIÓN,
-                    <span style={{color:'lightblue'}}>UNAM</span>, 2011/2016.</p>
-
-                    <hr className='hr-acerca'></hr>
-
-                    <p className="card-text">
-                    <small className="text-muted">Last updated 3 mins ago</small>
-                    </p>
-                    
-                    
-                  </div>
-                  
-                </div>
-                
-                <div className="card">
-                <center>
-                <i className="fa fa-folder-open fa-5x" aria-hidden="true"></i>
-                </center>
-                  
-                  <div className="card-block">
-                    <h4 className="card-title">Lenguajes.</h4>
-                    <p className="card-text">JAVASCRIPT,SASS, REACT, MYSQL, MONGODB.</p>
-                    <hr className='hr-acerca'></hr>
-                    <p className="card-text"><small className="text-muted">Last updated 7 mins ago</small></p>
-                  </div>
-                
-                </div>
-                
-                <div className="card">
-                <center>
-                <i className="fa fa-envelope-o fa-5x" aria-hidden="true"></i>
-                </center>
-                  <div className="card-block">
-                    <h4 className="card-title">Contacto.</h4>
-                    <p className="card-text">gerardobautista40@outlook.com</p>
-                    <hr className='hr-acerca'></hr>
-                    <p className="card-text"><small className="text-muted">Last updated 10 mins ago</small></p>
-                  </div>
-                </div>
-                
-            </div>
+          </center>
+            <h5 class="card-title">Estudios</h5>
+            <p class="card-text"> Ingeniería en Computación.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
           </div>
         </div>
         
+        <div class="card">
+          <div class="card-body">
+          <center>
+                <i className="fa fa-folder-open fa-5x" aria-hidden="true"></i>
+          </center>
+            <h5 class="card-title">Lenguajes</h5>
+            <p class="card-text">JAVASCRIPT(ES6) . 
+            REACT . 
+            SASS . 
+            MySQL . JEST. REDUX</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+        
+        <div  class="card">
+          <div class="card-body">
+          <center>
+                  <i class="fa fa-flask fa-5x" aria-hidden="true"></i>
+          </center>
+            <h5 class="card-title">Herramientas</h5>
+            <p class="card-text">This i</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+          
+        
+
+      </div>
+            
+    </div>
+        
+          
+        
         );
     }
-} export default Acerca;
+}; export default Acerca;
  

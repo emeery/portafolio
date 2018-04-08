@@ -1,5 +1,6 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
+import {Fade} from 'react-reveal';
 // una nueva nota pendiente, el oscuro fondo tomaba un aspecto lúgubre 
 // y la unica fuente de luz que despedía 3#sx1$. dotted edge 
 
@@ -8,8 +9,9 @@ const Cabecera = (props) => (
     
     <div className='cabecera__info'>
             <div>
+            <Fade  left delay={3000}>
             <h1 className='cabecera__titulo'
-            >{props.titulo}</h1>
+            >{props.titulo}</h1> </Fade>
             <hr></hr>
             {props.subtitulo && 
             <h3
