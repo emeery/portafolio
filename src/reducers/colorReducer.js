@@ -1,11 +1,11 @@
-const colorDefault = {
+const coloreducerDefaultState = {
     color: 'red'
-}
+};
 // colorReducer
-export default (state=colorDefault,action)=>{
+export default (state=coloreducerDefaultState,action)=>{
     switch(action.type) { 
-        case 'CREAR_GASTO':
-        return [...state, action.color];
+        case 'CAMBIA_COLOR':
+        return {...state, color: action.color}
         default: return state;
     }
 };

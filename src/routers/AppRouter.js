@@ -5,8 +5,9 @@ import Cabecera from '../componentes/Cabecera';
 import Acerca from '../componentes/Acerca';
 import Portafolio from '../componentes/Portafolio';
 import PortafolioItem from '../componentes/PortafolioItem' // COMPONENTE HIJO
-import Contacto from '../componentes/Contacto';
+//import Contacto from '../componentes/Contacto';
 import PaginaNoEncontrada from '../componentes/PaginaNoEncontrada';
+import ContactoCaja from '../componentes/ContactoCaja';
 
 const AppRouter = () => (
     <BrowserRouter>
@@ -19,7 +20,7 @@ const AppRouter = () => (
             <Route path="/" component={Acerca} exact={true} />
             <Route path="/portafolio" component={Portafolio} exact={true} />
             <Route path="/portafolio/:id" component={PortafolioItem}/>
-            <Route path="/contacto" component={Contacto} />
+            <Route path="/contacto" component={ContactoCaja} />
             <Route component={PaginaNoEncontrada} />
         </Switch>
     </div>

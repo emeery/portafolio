@@ -31,9 +31,9 @@ const Cabecera = (props) => (
         </NavLink>
 
         <NavLink 
-        to='/contacto' 
-        className='nav-link' 
-        activeClassName='is-active'
+            to='/contacto' 
+            className='nav-link' 
+            activeClassName='is-active'
         > Contacto 
         </NavLink>
     
