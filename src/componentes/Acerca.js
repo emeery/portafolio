@@ -14,8 +14,10 @@ class Acerca extends React.Component {
                 <i className="fa fa-desktop fa-5x" aria-hidden="true"></i>
           </center>
             <h5 className="card-title">Estudios</h5>
+            <p className="card-text-email"> 
+            gerardobautista40<span>@</span>outlook.com.</p>
             <p className="card-text"> 
-            INGENIERIA EN COMPUTACION.</p>
+            INGENIERÍA EN COMPUTACIÓN.</p>
             <p className="card-text"> 
             2011/2016.</p>
 

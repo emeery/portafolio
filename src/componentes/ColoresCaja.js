@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Contacto extends React.Component {
+class ColoresCaja extends React.Component {
     render() {
         return(<div 
             className='envoltura'>
@@ -22,5 +22,5 @@ class Contacto extends React.Component {
         </div>
         );
     }
-}; export default Contacto;
+}; export default ColoresCaja;
 

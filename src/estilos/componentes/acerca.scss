@@ -36,6 +36,13 @@
         font-size: $talla-l; color: lightblue;
         font-family: $anton; text-align: center;
     }
+    .card-text-email {
+        font-size: $talla-s; color:lightsalmon; 
+        font-family: $anton; text-align: center;
+        span { color: lightblue; &:hover {color: greenyellow;
+                cursor: pointer; } }
+
+    }
     .card-text {
         color: navajowhite; font-family: $yanone;
         font-size: 20px; text-align: center;
