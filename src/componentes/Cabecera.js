@@ -36,7 +36,7 @@ const Cabecera = (props) => (
             to='/contacto' 
             className='nav-link' 
             activeClassName='is-active'
-        > Contacto 
+        > Correo Electronico
         </NavLink>
     
     </div>

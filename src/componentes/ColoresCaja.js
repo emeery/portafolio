@@ -14,7 +14,8 @@ class ColoresCaja extends React.Component {
                     onClick={()=>{this.props.handleClick() }} 
                     type="button" >
                     
-                    Colores </button>
+                    <p className="card-text-email"> 
+            gerardobautista40<span>@</span>outlook.com.</p></button>
                 </center>
             </div>
                 
