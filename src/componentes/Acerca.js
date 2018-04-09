@@ -54,6 +54,12 @@ class Acerca extends React.Component {
           </center>
             <h5 className="card-title">Herramientas</h5>
             <p className="card-text">GIT, BASH, HEROKU</p>
+          <center>
+          <a  href="https://github.com/emeery" target="_blank" aria-hidden="true">
+          <i className="fab fa-github fa-2x"></i>
+          </a>
+            </center>
+
           </div>
           
         </div>
