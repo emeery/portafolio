@@ -4,17 +4,21 @@ class Contacto extends React.Component {
     render() {
         return(<div 
             className='envoltura'>
-            <div 
-            style={{backgroundColor:`${this.props.color}`}}
-            className='contacto-caja'>
-                <center>
+            
+
+            <div >
+            <center>
                     <button
+                    className='boton-color'
+                    style={{backgroundColor:`${this.props.color}`}}
                     onClick={()=>{this.props.handleClick() }} 
                     type="button" >
                     
                     Colores </button>
                 </center>
             </div>
+                
+            
         </div>
         );
     }

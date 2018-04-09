@@ -1,5 +1,5 @@
 const coloreducerDefaultState = {
-    color: 'red'
+    color: '#20222b'
 };
 // colorReducer
 export default (state=coloreducerDefaultState,action)=>{
