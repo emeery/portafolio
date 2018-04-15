@@ -23,7 +23,8 @@ class Acerca extends React.Component {
                 <i className="fa fa-desktop fa-5x" aria-hidden="true"></i>
           </center>
             <h5 className="card-title">Estudios</h5>
-            
+            <p className="card-text"> 
+            FES ARAGÓN (UNAM) </p>
             <p className="card-text"> 
             INGENIERÍA EN COMPUTACIÓN.</p>
             <p className="card-text"> 
