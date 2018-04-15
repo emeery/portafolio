@@ -1,13 +1,22 @@
 import React from 'react';
-
+import AcercaPersona from './AcercaPersona';
 class Acerca extends React.Component {
-    state = {nombre:'Gerardo'}
+    state= {direccion: 'Eduardo Molina 7725 Col. Unidad Habitacional Morelos I.',
+            movil: 5573301558,
+            estadoCivil: 'Soltero'
+    }
     render() {
         return (
-   
           
-      <div className="card-deck">
-      
+      <div >
+          <div>
+          <AcercaPersona
+              nombre='Gerardo Manuel Bautista'
+              direccion={this.state.direccion}
+              movil={this.state.estadoCivil}
+          />
+          </div>
+          
           <div className="card">
           <div className="card-body">
           <center>
@@ -54,7 +63,7 @@ class Acerca extends React.Component {
             <h5 className="card-title">Herramientas</h5>
             <p className="card-text">GIT, BASH, HEROKU</p>
           <center>
-          <a  href="https://github.com/emeery" target="_blank" aria-hidden="true">
+          <a  href="https://github.com/emeery/portafolio" target="_blank" aria-hidden="true">
           <i className="fab fa-github fa-2x"></i>
           </a>
             </center>
