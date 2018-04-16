@@ -29,14 +29,20 @@ const Cabecera = (props) => (
             className='nav-link' 
             activeClassName='is-active' 
             exact={true}
-        > Acerca 
+        > 
+        
+        <i className="far fa-keyboard fa-2x"></i>
+        
         </NavLink>
 
         <NavLink 
             to='/contacto' 
             className='nav-link' 
             activeClassName='is-active'
-        > Correo Electronico
+        > 
+        
+        
+        <i className="fas fa-at fa-2x"></i>
         </NavLink>
     
     </div>

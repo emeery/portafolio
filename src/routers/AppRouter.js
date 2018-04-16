@@ -2,7 +2,7 @@ import React from 'react';
 import {
 BrowserRouter, Switch, Route, Link, NavLink} from 'react-router-dom';
 import Cabecera from '../componentes/Cabecera';
-import Acerca from '../componentes/Acerca';
+import Perfil from '../componentes/Perfil';
 import PaginaNoEncontrada from '../componentes/PaginaNoEncontrada';
 import Colores from '../componentes/Colores';
 
@@ -14,7 +14,7 @@ const AppRouter = () => (
             />
         
         <Switch>
-            <Route path="/" component={Acerca} exact={true} />
+            <Route path="/" component={Perfil} exact={true} />
             
             <Route path="/contacto" component={Colores} />
             <Route component={PaginaNoEncontrada} />

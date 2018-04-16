@@ -5,7 +5,7 @@
     padding: $talla-s 0;
     margin-bottom: $talla-xs;
     height: 35rem;
-    background-image: url(./../imagenes/forest.jpg);
+    background-image: url(./../imagenes/beach.jpg);
     background-position: center;
     //position: absolute;
 }    
@@ -21,9 +21,9 @@
     margin: 0px; 
 }
 .cabecera__subtitulo { 
-    color: goldenrod; 
+    color: tomato; 
     font-weight: 500;
-    font-family: $pacifico;
+    font-family: $anton;
     font-size: 2rem;
     margin:0; 
 }
@@ -42,7 +42,8 @@ hr{
 .nav-link {
     color: cadetblue;
     outline: none;
-    
+    font-family: $dosis;
+    font-size: 2rem;
 }
 .espacio-cabecera {
     margin-top: 5rem;

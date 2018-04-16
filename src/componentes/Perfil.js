@@ -1,19 +1,23 @@
 import React from 'react';
-import AcercaPersona from './AcercaPersona';
-class Acerca extends React.Component {
-    state= {direccion: 'Eduardo Molina 7725 Col. Unidad Habitacional Morelos I.',
-            movil: 5573301558,
-            estadoCivil: 'Soltero'
+import PerfilPersona from './PerfilPersona';
+class Perfil extends React.Component {
+    
+    state = { 
+      nombre: 'Gerardo Manuel Bautista',
+      edad: 27,
+      
     }
+   
     render() {
         return (
           
       <div >
           <div>
-          <AcercaPersona
-              nombre='Gerardo Manuel Bautista'
+          <PerfilPersona
+              nombre={this.state.nombre}
               direccion={this.state.direccion}
-              movil={this.state.estadoCivil}
+              edad={this.state.edad}
+              
           />
           </div>
           
@@ -41,11 +45,11 @@ class Acerca extends React.Component {
             </center>
             <h5 className="card-title"> Lenguajes</h5>
             <p className="card-text"> 
-             JAVASCRIPT (<span>ES6</span>)  - SASS - 
+             JAVASCRIPT (<span>ES6</span>)  - SASS 
             </p>
             
             <p className="card-text"> 
-            REACT (<span>REDUX, WEBPACK, JEST</span>)
+            REACT (<span>REDUX, WEBPACK</span>)
             </p>
 
             <p className="card-text"> 
@@ -62,7 +66,7 @@ class Acerca extends React.Component {
                   <i className="fa fa-flask fa-5x" aria-hidden="true"></i>
           </center>
             <h5 className="card-title">Herramientas</h5>
-            <p className="card-text">GIT, BASH, HEROKU</p>
+            <p className="card-text">GIT, BASH, HEROKU, VS CODE</p>
           <center>
           <a  href="https://github.com/emeery/portafolio" target="_blank" aria-hidden="true">
           <i className="fab fa-github fa-2x"></i>
@@ -83,5 +87,5 @@ class Acerca extends React.Component {
         
         );
     }
-}; export default Acerca;
+}; export default Perfil;
  
