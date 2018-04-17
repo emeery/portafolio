@@ -14,13 +14,18 @@ const Cabecera = (props) => (
       className='cabecera-parallax'
     >
         <div className='cabecera__info' >
-          <h1 className='cabecera__titulo'
+          <Fade left delay={3000}>
+            <h1 className='cabecera__titulo'
               > { props.titulo } </h1> 
+          </Fade>  
+          <Fade right delay={2000}>
                   <hr></hr>
-                  
-              { props.subtitulo && 
+          </Fade>
+          <Rotate>
+            { props.subtitulo && 
           <h3 className='cabecera__subtitulo'
               > {props.subtitulo} </h3> }
+          </Rotate>
         
               
         
@@ -57,13 +62,3 @@ export default Cabecera;
 
 Cabecera.defaultProps = {
 titulo: 'Portapapeles' };
-
-// <Parallax
-// blur={{ min: -15, max: 15 }}
-// bgImage={require('path/to/another/image.jpg')}
-// bgImageAlt="the dog"
-// strength={200}
-// >
-// Blur transition from min to max
-// <div style={{ height: '200px' }} />
-// </Parallax>

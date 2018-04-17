@@ -34,6 +34,7 @@
     width: 100%;
     }
 .boton-grande:disabled {opacity: .5;}
+.card-text-correo {color:turquoise; word-wrap: break-word; }
 
 @media (min-width: $escritorio-breakpoint) {
     .boton-grande {padding-bottom: $talla-xl; }

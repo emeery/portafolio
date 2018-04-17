@@ -23,12 +23,12 @@
 }
 // .card-deck {
     
-    .card { background-color:$negro; border-bottom-color: orange; 
+    .card { background-color: honeydew; border-bottom-color: orange; 
         border-width: medium; height: 29rem; padding-top: -10px;
         display: flex;
     }
     .card-title { 
-        font-size: $talla-l; color: lightblue;
+        font-size: $talla-l; color: turquoise;
         font-family: $anton; text-align: center;
     }
     .card-text-email {
@@ -39,26 +39,26 @@
 
     }
     .card-text {
-        color: navajowhite; font-family: $yanone;
+        color: lightseagreen; font-family: $yanone;
         font-size: 20px; text-align: center;
-        
+        word-wrap: break-word;
     }
     span { color: lightcoral; }
 
     .text-muted { font-family: $oswald; }
-    .fa-desktop {color:lightblue; cursor: pointer; 
-        margin-bottom: $talla-l; 
+    .fa-address-card {color:#2874a6; cursor: pointer; 
+        margin-bottom: $talla-m; 
             &:hover {color: lightgreen; } 
         }
-    .fa-folder-open {color:lightblue; cursor: pointer; 
-        margin-bottom: $talla-l; 
+    .fa-folder-open {color:#2874a6; cursor: pointer; 
+        margin-bottom: $talla-m; 
             &:hover {color: lightgreen; } 
         }
-    .fa-flask {color:lightblue; cursor: pointer;
-        margin-bottom: $talla-l; 
+    .fa-flask {color:#2874a6; cursor: pointer;
+        margin-bottom: $talla-m; 
             &:hover {color: lightgreen; }
         }
-    .fa-github {color:lightblue; 
+    .fa-github {color:lightblue; margin-top: 25px;
         &:hover {color: lightgreen; }
         }
     
