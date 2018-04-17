@@ -5,7 +5,7 @@
     padding: $talla-s 0;
     margin-bottom: $talla-xs;
     height: 35rem;
-    background-image: url(./../imagenes/beach.jpg);
+    //background-image: url(./../imagenes/beach.jpg);
     background-position: center;
     //position: absolute;
 }    
@@ -16,7 +16,7 @@
 }
 .cabecera__titulo {
     font-size: $talla-xl; 
-    color: teal;
+    color:lightblue;
     font-family: $oswald;
     margin: 0px; 
 }
@@ -36,7 +36,7 @@ hr{
     float: center;
     border: 0; 
     height: 2px;
-    background: whitesmoke;
+    background: turquoise;
     //background-image: linear-gradient(to right, #ccc, salmon, #ccc);
 }
 .nav-link {
@@ -44,11 +44,18 @@ hr{
     outline: none;
     font-family: $dosis;
     font-size: 2rem;
+    text-align: center;
 }
 .espacio-cabecera {
     margin-top: 5rem;
     background-color: rosybrown;
+    
 }
+.cabecera-parallax {
+    height: 500px;
+}
+.fa-keyboard { color:teal; }
+.fa-at { color:teal; }
 @media (min-width: $escritorio-breakpoint) {
     .cabecera-nota {margin-bottom: $talla-xl;}
 }

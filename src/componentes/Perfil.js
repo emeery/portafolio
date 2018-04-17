@@ -13,12 +13,7 @@ class Perfil extends React.Component {
           
       <div >
           <div>
-          <PerfilPersona
-              nombre={this.state.nombre}
-              direccion={this.state.direccion}
-              edad={this.state.edad}
-              
-          />
+          
           </div>
           
           <div className="card">
@@ -89,3 +84,10 @@ class Perfil extends React.Component {
     }
 }; export default Perfil;
  
+
+// <PerfilPersona
+//               nombre={this.state.nombre}
+//               direccion={this.state.direccion}
+//               edad={this.state.edad}
+              
+//           />
