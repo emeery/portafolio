@@ -7,7 +7,7 @@ export function cargaColor() {
             dispatch(cambiaColor('#'+ response.data.new_color));
        }).catch((err) => {
         console.log('hubo error', err);
-       }) ;
+       });
     }
 }
 // switch(action.type) {}
