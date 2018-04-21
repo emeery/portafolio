@@ -5,6 +5,7 @@ import Cabecera from '../componentes/Cabecera';
 import Perfil from '../componentes/Perfil';
 import PaginaNoEncontrada from '../componentes/PaginaNoEncontrada';
 import Colores from '../componentes/Colores';
+import Clima from '../componentes/Clima';
 
 const AppRouter = () => (
     <BrowserRouter>
@@ -15,7 +16,7 @@ const AppRouter = () => (
         
         <Switch>
             <Route path="/" component={Perfil} exact={true} />
-            
+            <Route path="/pronostico" component={Clima} />
             <Route path="/contacto" component={Colores} />
             <Route component={PaginaNoEncontrada} />
         </Switch>

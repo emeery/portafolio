@@ -4,11 +4,8 @@ import {Fade, Zoom, Rotate} from 'react-reveal';
 import forest from '../imagenes/forest.jpg'
 import { Parallax, Background } from 'react-parallax';
 
-
 const Cabecera = (props) => (
   <div>
-   
-   
     <Parallax 
       strength={300}
       className='cabecera-parallax'
@@ -48,6 +45,14 @@ const Cabecera = (props) => (
             activeClassName='is-active'
         > 
           <i className="fas fa-at fa-3x"></i>
+        </NavLink>
+
+        <NavLink 
+            to='/pronostico' 
+            className='nav-link' 
+            activeClassName='is-active'
+        > 
+          <i className="fas fa-bolt fa-3x"></i>
         </NavLink>
       
       <Background 
