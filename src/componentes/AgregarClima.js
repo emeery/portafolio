@@ -17,7 +17,7 @@ class AgregaClima extends React.Component {
         const ciudad = e.target.elements.ciudad.value.trim();
         const pais = e.target.elements.pais.value.trim();
         
-        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ciudad},${pais}&appid=${API_KEY}&units=metric`)
+        fetch(`//api.openweathermap.org/data/2.5/weather?q=${ciudad},${pais}&appid=${API_KEY}&units=metric`)
         .then( res => {
             return res.json();
         }).then( dato => {
