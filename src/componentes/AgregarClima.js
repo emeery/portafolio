@@ -32,24 +32,54 @@ class AgregaClima extends React.Component {
         })
     }
     
+    // <input 
+    //              type='text'
+    //              name='ciudad'
+    //              placeholder='Ciudad o Estado'
+    //              >
+    //              </input>
+
     render() {
-        return(<div>
+        return(<div >
             <form onSubmit={this.obtieneClima}>
-                 <input 
-                 type='text'
-                 name='ciudad'
-                 placeholder='tu Ciudad'
-                 >
-                 </input>
-                 <input 
-                 type='text'
-                 name='pais'
-                 placeholder='tu Pais'
-                 >
-                 </input>
-                 <button>get pronostico</button>
+                
+                 
+
+                 <div className='clima-forma'>
+                    <center>
+                    <div className="md-form">
+                        <input 
+                        type="text"
+                        name='ciudad' 
+                        id="form1" 
+                        className="form-control"
+                        placeholder='Ciudad o Estado'
+                        >
+                        </input>
+                    </div>
+
+                    <div className="md-form">
+                        <input 
+                        type="text"
+                        name='pais' 
+                        id="form1" 
+                        className="form-control"
+                        placeholder='MX'
+                        >
+                    </input>
+                    </div>
+                    </center>
+
+                    <button>PRONOSTICO</button>
+                </div>
+                
                  <ClimaInfo
                  temperatura={this.state.temperatura}
+                 ciudad={this.state.ciudad}
+                 pais={this.state.pais}
+                 descripcion={this.state.descripcion}
+                 humedad={this.state.humedad}
+                 descripcion={this.state.descripcion}
                  />
              </form>
          </div>);
