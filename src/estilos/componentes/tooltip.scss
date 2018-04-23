@@ -1,0 +1,35 @@
+
+$color-icono-teclado: #2b97f1;
+$color-icono-arroba: #4284c0;
+$color-icono-relampago: #4284c0;
+
+
+.contenedor-iconos {
+    background-color: lightcyan;
+    position: absolute;
+    border-radius: 15px;
+    
+    hr {
+        width: $talla-s;
+    }
+}
+
+.contenedor-icono {
+    color: #ffd27f;
+   
+    &:hover {
+       color: #ffae19; 
+    }
+}
+
+
+
+// .fa-keyboard { 
+//     color:lightsalmon;
+// }
+// .fa-at { 
+//     color:lightsalmon; 
+// }
+// .fa-bolt { 
+//     color:lightsalmon;
+// }

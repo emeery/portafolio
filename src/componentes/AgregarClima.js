@@ -31,13 +31,6 @@ class AgregaClima extends React.Component {
             });
         })
     }
-    
-    // <input 
-    //              type='text'
-    //              name='ciudad'
-    //              placeholder='Ciudad o Estado'
-    //              >
-    //              </input>
 
     render() {
         return(<div >

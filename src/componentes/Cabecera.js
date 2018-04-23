@@ -3,6 +3,7 @@ import {NavLink} from 'react-router-dom';
 import {Fade, Zoom, Rotate} from 'react-reveal';
 import forest from '../imagenes/forest.jpg'
 import { Parallax, Background } from 'react-parallax';
+import {Tooltip} from 'react-tippy';
 
 const Cabecera = (props) => (
   <div>
@@ -27,34 +28,47 @@ const Cabecera = (props) => (
               
         
         </div>
+        
         <div className='espacio-cabecera'></div>
         
-        <NavLink 
-            to='/' 
-            className='nav-link' 
-            activeClassName='is-active' 
-            exact={true}
-        > 
-          <i className="far fa-keyboard fa-3x"></i>
-        </NavLink>
+        <div className='contenedor-iconos'>
+            <NavLink 
+                to='/' 
+                className='nav-link' 
+                activeClassName='is-active' 
+                exact={true}
+            > 
+              <i 
+              className="contenedor-icono far fa-keyboard fa-3x"
+            > </i>
+            
+            </NavLink>
+            
+            <hr/> 
+            
+            <NavLink 
+                to='/contacto' 
+                className='nav-link' 
+                activeClassName='is-active'
+            >
+            <i 
+              className="contenedor-icono fas fa-at fa-3x"
+            > </i>
+            </NavLink>
+            
+            <hr/>
 
-        
-        <NavLink 
-            to='/contacto' 
-            className='nav-link' 
-            activeClassName='is-active'
-        > 
-          <i className="fas fa-at fa-3x"></i>
-        </NavLink>
+            <NavLink 
+                to='/pronostico' 
+                className='nav-link' 
+                activeClassName='is-active'
+            > 
+            <i 
+              className="contenedor-icono fas fa-bolt fa-3x"
+            > </i>
+            </NavLink>
+        </div>
 
-        <NavLink 
-            to='/pronostico' 
-            className='nav-link' 
-            activeClassName='is-active'
-        > 
-          <i className="fas fa-bolt fa-3x"></i>
-        </NavLink>
-      
       <Background 
       className="custom-bg">
           <img src={forest} alt={"nubes"} />
