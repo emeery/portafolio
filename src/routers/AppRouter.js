@@ -11,7 +11,7 @@ const AppRouter = () => (
     <BrowserRouter>
     <div >
             <Cabecera 
-            subtitulo='histora curricular.'
+            subtitulo='historia curricular.'
             />
         
         <Switch>
