@@ -108,4 +108,5 @@ const Cabecera = (props) => (
 export default Cabecera;
 
 Cabecera.defaultProps = {
-titulo: 'Otro titulo' };
+titulo: 'Vitae',
+ };
