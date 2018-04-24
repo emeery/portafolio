@@ -3,7 +3,7 @@ $color-icono-teclado: #2b97f1;
 $color-icono-arroba: #4284c0;
 $color-icono-relampago: #4284c0;
 
-
+// cabecera
 .contenedor-iconos {
     background-color: lightcyan;
     position: absolute;
@@ -14,13 +14,76 @@ $color-icono-relampago: #4284c0;
     }
 }
 
-.contenedor-icono {
-    color: #ffd27f;
-   
-    &:hover {
-       color: #ffae19; 
+// tooltip monolito
+.monolito {
+    
+    background-color: transparent;
+    height: 4rem;
+    width: 7rem;
+    p {
+        height: 5rem;
+        padding-left: 1rem;
+        font-family: $anton;
+        font-size: 4rem;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-color: lightblue;
+        -webkit-text-stroke-width: 2.00px;;
     }
 }
+
+// iconos
+.cabecera-icono {
+    color: #ffd27f;
+    
+    &:hover {
+    color: #ffae19;
+    
+    .tooltip {
+      visibility: visible;
+      opacity: 1;
+      transform: translate(-50%, -150%);
+    }
+  }
+    
+//   &:active {
+//     //box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5) inset;
+//   }
+}
+
+
+.tooltip {
+    background-color: red;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    padding: 0.8rem 1rem;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    opacity: 0;
+    pointer-events: none;
+    text-transform: uppercase;
+    transform: translate(-50%, -100%);
+    transition: all 0.3s ease;
+    z-index: 1;
+    
+    &:after {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 0;
+      content: "";
+      border: solid;
+      border-width: 10px 10px 0 10px;
+      border-color: transparent;
+      transform: translate(-50%, 100%);
+    }
+  } 
+
+
 
 
 
