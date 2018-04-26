@@ -2,28 +2,34 @@ import React from 'react';
 import {
 BrowserRouter, Switch, Route, Link, NavLink} from 'react-router-dom';
 import Cabecera from '../componentes/Cabecera';
-import Perfil from '../componentes/Perfil';
+import Nav from '../componentes/Nav';
 import PaginaNoEncontrada from '../componentes/PaginaNoEncontrada';
-import Colores from '../componentes/Colores';
+import Contacto from '../componentes/Contacto';
 import Clima from '../componentes/Clima';
-
+import Experiencia from '../componentes/Experiencia';
+import Biografia from '../componentes/Biografia';
 const AppRouter = () => (
+    
     <BrowserRouter>
+    
     <div >
+            
             <Cabecera 
-            subtitulo='historia curricular.'
+            subtitulo='Bienvenido a mi Sitio.'
             />
-        
         <Switch>
-            <Route path="/" component={Perfil} exact={true} />
+            <Route path="/" component={Biografia} exact={true} />
             <Route path="/pronostico" component={Clima} />
-            <Route path="/contacto" component={Colores} />
+            <Route path="/contacto" component={Contacto} />
+            <Route path="/experiencia" component={Experiencia} />
             <Route component={PaginaNoEncontrada} />
         </Switch>
+        
     </div>
     </BrowserRouter>
 ); 
 export default AppRouter;
 
-// <Route path="/portafolio" component={Portafolio} exact={true} />
+
+
 // <Route path="/portafolio/:id" component={PortafolioItem}/>

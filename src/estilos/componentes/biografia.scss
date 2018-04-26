@@ -1,0 +1,134 @@
+
+.biografia-contenedor {
+    border-width: 5px;
+    border-style: solid;
+    border-color:  indianred;
+    padding-top: 10rem;
+    background-color: $negro;
+    height: 400px;
+    color: whitesmoke;   
+    p { font-family: $anton; 
+        text-align: center;
+        font-size: 3rem;
+        color: floralwhite;
+        span {color:  rosybrown; }
+    }
+    h3 { 
+        text-align: center;
+        font-family: $anton;
+        color: floralwhite;
+        span {color: #d6eaf8; }
+        span:nth-child(2) {
+            color: lightsalmon;
+        }
+    }
+    h4 {
+        text-align: center;
+        font-family: $anton;
+        font-weight: 100;
+        span { color: lightcoral; }
+        span:nth-child(2) {
+            color: lightgreen;
+        }
+    }
+}
+
+
+
+.biografia-franja {
+    background-color: tomato;
+    text-align: center;
+    height: 2px;
+    
+    
+    ul {
+        display: inline-block;
+        vertical-align: middle;
+        color: whitesmoke;
+    }
+    
+}
+
+// .acerca__titulo {
+//     color: red;
+//     font-size: $talla-xl;
+//     font-family: $oswald;
+//     text-align: center;
+//     top: 30rem; left:0; bottom:0; right:0;
+// }
+// .acerca-pagina__titulo {
+//     color: $sandia;
+//     background-color: $negro;
+//     font-size: $talla-xl;
+//     font-family: $right;
+//     text-align: center;
+//      left:0; bottom:0; right:0;
+// }
+// .acerca__nombre {   
+//     color: lightsteelblue;
+//     font-family: $oswald;
+//     font-size: $talla-xl;
+//     text-align: center;
+// }
+// // .card-deck {
+    
+//     .card { background-color: honeydew; border-bottom-color: orange; 
+//         border-width: medium; height: 29rem; padding-top: -10px;
+//         display: flex;
+//     }
+//     .card-title { 
+//         font-size: $talla-l; color: turquoise;
+//         font-family: $anton; text-align: center;
+//     }
+//     .card-text-email {
+//         font-size: $talla-s; color:lightsalmon; 
+//         font-family: $anton; text-align: center;
+//         span { color: lightblue; &:hover {color: greenyellow;
+//                 cursor: pointer; } }
+
+//     }
+//     .card-text {
+//         color: lightseagreen; font-family: $yanone;
+//         font-size: 20px; text-align: center;
+//         word-wrap: break-word;
+//     }
+//     span { color: lightcoral; }
+
+//     .text-muted { font-family: $oswald; }
+//     .fa-address-card {color:#2874a6; cursor: pointer; 
+//         margin-bottom: $talla-m; 
+//             &:hover {color: lightgreen; } 
+//         }
+//     .fa-folder-open {color:#2874a6; cursor: pointer; 
+//         margin-bottom: $talla-m; 
+//             &:hover {color: lightgreen; } 
+//         }
+//     .fa-flask {color:#2874a6; cursor: pointer;
+//         margin-bottom: $talla-m; 
+//             &:hover {color: lightgreen; }
+//         }
+//     .fa-github {color:lightblue; margin-top: 25px;
+//         &:hover {color: lightgreen; }
+//         }
+    
+// .bio {
+//     background-color: black;
+//      
+// .card-deck { 
+    
+// }
+
+// border-color: $sandia; text-align: center; //margin-top: -16px; 
+//     height: 15rem;
+//     background-color: $negro;
+//     //margin-bottom: 16px; padding-bottom:5px; 
+    
+//     .card-block { padding-top: $talla-m; }
+//     
+//     .card-text { font-size: $talla-m; color: whitesmoke;}
+//     //.card-block { }
+//     .fa-desktop {color:lightblue; cursor: pointer; font-size:8em; padding-bottom:10px; &:hover {color: lightgreen; } }
+//     .fa-folder-open {color:lightblue; cursor: pointer; font-size:8em; padding-bottom:20px; &:hover {color: lightgreen; } }
+//     .fa-envelope-o {color:lightblue; cursor: pointer; font-size:8em; padding-bottom:20px; &:hover {color: lightgreen; } }
+//     p{font-size:2vh; font-family: $oswald}
+//     h4{color:lightseagreen; font-size:4vh; font-family: $oswald;}

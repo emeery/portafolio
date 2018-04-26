@@ -1,5 +1,13 @@
-.envoltura {
-    height: 20rem;
+.contenedor-contacto {
+    background-color: $negro;
+    height: 310px; 
+    border-width: 5px;
+    border-style: solid;
+    border-color:  indianred;
+}
+
+.envoltura-boton {
+    height: 10rem;
     .card-text-email {
         font-size: 3rem;
         word-wrap: break-word;
@@ -9,7 +17,7 @@
     vertical-align: text-bottom;
 }
 .boton-color {
-    //background-color: $mora; 
+    
     font-family: $anton;
     border:none;
     border-bottom: .6rem solid darken($purpura, 10%);

@@ -1,13 +1,13 @@
 import React from 'react';
 
-class ColoresCaja extends React.Component {
+class ContactoBoton extends React.Component {
     render() {
-        return(<div 
-            className='envoltura'>
+        return(<div >
             
 
             <div >
             <center>
+                    <div className='envoltura-boton'></div>
                     <button
                     className='boton-color'
                     style={{backgroundColor:`${this.props.color}`}}
@@ -23,5 +23,5 @@ class ColoresCaja extends React.Component {
         </div>
         );
     }
-}; export default ColoresCaja;
+}; export default ContactoBoton;
 

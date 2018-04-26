@@ -1,10 +1,11 @@
 import React from 'react';
 import PerfilPersona from './PerfilPersona';
-class Perfil extends React.Component {
+class Experiencia extends React.Component {
     
     state = { 
-      nombre: 'GERARDO MANUEL BAUTISTA',
-      edad: 27,
+      empresa: 'BBVA',
+      posicion: 'ANALISTA/PROGRAMADOR, FRONT-END',
+      periodo: 'JUNIO/17 - ENERO/2018'
     }
    
     render() {
@@ -14,15 +15,15 @@ class Perfil extends React.Component {
     
       <div className="card-body">
               <center>
-              <i className="far fa-address-card fa-5x"></i>
+              <i className="far fa-building fa-5x"></i>
               </center>
-            <h5 className="card-title">Acerca</h5>
+            <h5 className="card-title">Ultimo Empleo</h5>
             <p className="card-text"> 
-              {this.state.nombre} </p>
+              {this.state.empresa} </p>
             <p className="card-text"> 
-              INGENIERÍA EN COMPUTACIÓN.</p>
+              {this.state.posicion}</p>
             <p className="card-text"> 
-              UNAM - 2011/2016.</p>
+              {this.state.periodo}</p>
       </div>
     </div>
   
@@ -69,6 +70,6 @@ class Perfil extends React.Component {
        </div> 
         );
     }
-}; export default Perfil;
+}; export default Experiencia;
  
 

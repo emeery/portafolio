@@ -1,16 +1,19 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import * as creadorAcciones from '../acciones/Colores.js' 
-import ColoresCaja from '../componentes/ColoresCaja'; // componente hijo
+import ContactoBoton from '../componentes/ContactoBoton'; // componente hijo
 
-
-class Colores extends React.Component {
+class Contacto extends React.Component {
     render() {
         return(
-            <ColoresCaja 
+            <div className='contenedor-contacto'>
+
+            <ContactoBoton
             handleClick={this.props.cargaColor}
             color={this.props.color}
             />
+            </div>
+
         );
     }
 }
@@ -19,4 +22,4 @@ const mapStateToProps = (state) => {
     return state
 };
 // conecta el componente Colores con la tienda para llamar a la accion cargaColor.     
-export default connect(mapStateToProps, creadorAcciones)(Colores);
+export default connect(mapStateToProps, creadorAcciones)(Contacto);

@@ -54,7 +54,11 @@ hr{
 .cabecera-parallax {
     height: 500px;
 }
-
+.fa-angle-down { 
+    margin-top: 22rem;
+    color: lightgoldenrodyellow; 
+    &:hover {color: lightgreen; }
+}
 @media (min-width: $escritorio-breakpoint) {
     .cabecera-nota {margin-bottom: $talla-xl;}
 }
