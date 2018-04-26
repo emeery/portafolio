@@ -1,35 +1,15 @@
-.acerca__titulo {
-    color: red;
-    font-size: $talla-xl;
-    font-family: $oswald;
-    text-align: center;
-    top: 30rem; left:0; bottom:0; right:0;
-}
-.acerca-pagina__titulo {
-    color: $sandia;
-    background-color: $negro;
-    font-size: $talla-xl;
-    font-family: $right;
-    text-align: center;
-     left:0; bottom:0; right:0;
-}
-.acerca__nombre {   
-    color: lightsteelblue;
-    font-family: $oswald;
-    font-size: $talla-xl;
-    text-align: center;
-}
+
 // .card-deck {
     .card-deck { 
         background-color: $negro;
-        height: 310px; 
-        border-width: 5px;
-        border-style: solid;
-        border-color:  indianred;
+        //height: 310px; 
+       
     }
     .card { background-color:$negro; border-bottom-color: orange; 
-        border-width: medium; height: 29rem; padding-top: -10px;
-        display: flex;
+         height: 29rem; padding-top: -10px;
+        border-width: 5px;
+        border-style: solid;
+        border-color:  indianred; 
     }
     .card-title { 
         font-size: $talla-l; color: $agua;
