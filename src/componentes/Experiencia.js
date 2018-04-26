@@ -39,7 +39,7 @@ class Experiencia extends React.Component {
             </p>
       
             <p className="card-text"> 
-              REACT(<span>REDUX, WEBPACK, SASS</span>)
+              REACT-JS(<span>REDUX, WEBPACK, SASS</span>)
             </p>
 
             <p className="card-text"> 
