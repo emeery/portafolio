@@ -4,32 +4,35 @@ class Biografia extends React.Component {
     state = { 
       nombre: 'GERARDO MANUEL BAUTISTA',
       edad: 27,
+      estudios: 'INGENIERIO EN COMPUTACIÓN'
     }
    
     render() {
         return (
-            <div className='biografia-contenedor-p'>
+            
                 <div className='biografia-contenedor'>
                 
                    <p 
-                    className='biografia__titulo' 
-                    > Hola, mi nombre es <span
-                    > {this.state.nombre} </span>
-                   </p>
+                    > Hola, mi nombre es </p>
+                    
+                    <div className='biografia__nombre' >
+                    <center><h3>{this.state.nombre}</h3></center> </div>
                    
-                   <h3>
-                   Soy <span>INGENIERO EN COMPUTACIÓN</span> de la ( <span
-                    > FES-ARAGÓN  </span> )
-                   </h3>
+                         <p>& soy </p>
                    
-                   <h4>Tengo <span
-                   > {this.state.edad} </span
-                   > años y resido como ( <span
-                    >PASANTE</span> )</h4>
+                    <div className='biografia__estudios' >
+                   <h4>{this.state.estudios}</h4> </div> 
+                   
+                   
+                   <div className='biografia__años' >
+                   <p> Tengo <span>{this.state.edad}</span>&nbsp;años, 
+                   (<span>PASANTE</span>)  </p></div>
+                   
+                   
                     <hr/>
                    
                 </div>
-            </div>
+            
         );
     }
 }; export default Biografia;
