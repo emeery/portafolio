@@ -6,23 +6,17 @@ import AgregarClima
 
 
 
-class Clima extends React.Component {
-    state = {error: 'un error' }
-    // obtieneClima = (clima) => { 
-    //     if(!clima) {
-    //         console.log('no hay clima');     
-    //     }
+    class Clima extends React.Component {
+        state = {error: 'un error' }
+        
+        render() {
+        return(<div>
+                <h1>El pronostico de hoy ?</h1>
+                <AgregarClima
+                onSubmit={this.obtieneClima}
+                />
+            </div>);
+        }
 
-       
-    // }
-    render() {
-      return(<div>
-             <h1>El pronostico de hoy ?</h1>
-            <AgregarClima
-            onSubmit={this.obtieneClima}
-            />
-        </div>);
     }
-
-}
 export default Clima;
