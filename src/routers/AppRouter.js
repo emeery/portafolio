@@ -16,7 +16,7 @@ const AppRouter = () => (
     <div >
             
             <Cabecera 
-            subtitulo='Bienvenido al sitio!'
+            subtitulo='Bienvenido!'
             />
         <Switch>
             <Route path="/" component={Biografia} exact={true} />
