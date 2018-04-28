@@ -17,7 +17,7 @@ class AgregaClima extends React.Component {
         const ciudad = e.target.elements.ciudad.value.trim();
         const pais = e.target.elements.pais.value.trim();
         
-        fetch(`//api.openweathermap.org/data/2.5/weather?q=${ciudad},${pais}&appid=${API_KEY}&units=metric`)
+        fetch(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad},${pais}&appid=${API_KEY}&units=metric`)
         .then( res => {
             return res.json();
         }).then( dato => {
@@ -31,48 +31,25 @@ class AgregaClima extends React.Component {
             });
         })
     }
-
+    
     render() {
-        return(<div >
+        return(<div>
             <form onSubmit={this.obtieneClima}>
-                
-                 
-
-                 <div className='clima-forma'>
-                    <center>
-                    <div className="md-form">
-                        <input 
-                        type="text"
-                        name='ciudad' 
-                        id="form1" 
-                        className="form-control"
-                        placeholder='Ciudad o Estado'
-                        >
-                        </input>
-                    </div>
-
-                    <div className="md-form">
-                        <input 
-                        type="text"
-                        name='pais' 
-                        id="form1" 
-                        className="form-control"
-                        placeholder='MX'
-                        >
-                    </input>
-                    </div>
-                    </center>
-
-                    <button>PRONOSTICO</button>
-                </div>
-                
+                 <input 
+                 type='text'
+                 name='ciudad'
+                 placeholder='tu Ciudad'
+                 >
+                 </input>
+                 <input 
+                 type='text'
+                 name='pais'
+                 placeholder='tu Pais'
+                 >
+                 </input>
+                 <button>get pronostico</button>
                  <ClimaInfo
                  temperatura={this.state.temperatura}
-                 ciudad={this.state.ciudad}
-                 pais={this.state.pais}
-                 descripcion={this.state.descripcion}
-                 humedad={this.state.humedad}
-                 descripcion={this.state.descripcion}
                  />
              </form>
          </div>);

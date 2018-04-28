@@ -8,6 +8,7 @@ import Contacto from '../componentes/Contacto';
 import Clima from '../componentes/Clima';
 import Experiencia from '../componentes/Experiencia';
 import Biografia from '../componentes/Biografia';
+
 const AppRouter = () => (
     
     <BrowserRouter>
@@ -15,7 +16,7 @@ const AppRouter = () => (
     <div >
             
             <Cabecera 
-            subtitulo='Bienvenido a mi Sitio.'
+            subtitulo='Bienvenido al sitio!'
             />
         <Switch>
             <Route path="/" component={Biografia} exact={true} />

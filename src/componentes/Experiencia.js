@@ -1,5 +1,5 @@
 import React from 'react';
-import PerfilPersona from './PerfilPersona';
+
 class Experiencia extends React.Component {
     
     state = { 

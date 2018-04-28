@@ -2,7 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import * as creadorAcciones from '../acciones/Colores.js' 
 import ContactoBoton from '../componentes/ContactoBoton'; // componente hijo
-
+import Clima from '../componentes/Clima';
 class Contacto extends React.Component {
     render() {
         return(
@@ -12,6 +12,7 @@ class Contacto extends React.Component {
             handleClick={this.props.cargaColor}
             color={this.props.color}
             />
+            <Clima/>
             </div>
 
         );
