@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 import configuraTienda from './tienda/configuraTienda';
 import 'normalize.css/normalize.css';
 import './estilos/styles.scss';
-
+import './firebase/firebase';
 
 
 const tienda = configuraTienda();

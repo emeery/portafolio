@@ -26,7 +26,7 @@ class Biografia extends React.Component {
                    
                    <div className='biografia__años' >
                    <p> Tengo <span>{this.state.edad}</span>&nbsp;años, 
-                   (<span>PASANTE</span>)  </p></div>
+                   <span> PASANTE</span>  </p></div>
                    
                    
                     <hr/>

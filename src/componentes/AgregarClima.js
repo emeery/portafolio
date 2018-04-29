@@ -1,17 +1,26 @@
 import React from 'react'
 import ClimaInfo from '../componentes/ClimaInfo';
-
+import basedatos from '../firebase/firebase';
 const API_KEY = "a3de5cffde10c377d199699b3da6fc6f";
 
 class AgregaClima extends React.Component {
     state = {
         temperatura:undefined, 
-        ciudad:undefined, 
+        ciudad:undefined,   
         pais:undefined, 
         humedad:undefined, 
         descripcion:undefined, 
-        //error:undefined
+        climas: []
     }
+    // componentDidMount() {
+    //     try {
+    //         const json = localStorage.getItem('climas');
+    //         const opciones = JSON.parse(json);
+    //         if(climas) { this.setState(()=>({
+    //             climas })); 
+    //         } 
+    //         } catch (e) { }
+    // }
     obtieneClima = (e) => { e.preventDefault();
         
         const ciudad = e.target.elements.ciudad.value.trim();
@@ -21,6 +30,7 @@ class AgregaClima extends React.Component {
         .then( res => {
             return res.json();
         }).then( dato => {
+            
             console.log(dato);
             this.setState({
                 temperatura: dato.main.temp,
@@ -33,18 +43,19 @@ class AgregaClima extends React.Component {
     }
     
     render() {
-        return(<div>
+        return(<div className='contenedor__agregar-clima'>
             <form onSubmit={this.obtieneClima}>
-                 <input 
+                 <input
+                 size='10' 
                  type='text'
                  name='ciudad'
-                 placeholder='tu Ciudad'
+                 placeholder='Tu Ciudad'
                  >
                  </input>
                  <input 
                  type='text'
                  name='pais'
-                 placeholder='tu Pais'
+                 placeholder='Tu Pais'
                  >
                  </input>
                  <button>get pronostico</button>

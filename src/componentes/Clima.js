@@ -10,7 +10,7 @@ import AgregarClima
         state = {error: 'un error' }
         
         render() {
-        return(<div>
+        return(<div className='contenedor__clima'>
                 <h1>El pronostico de hoy ?</h1>
                 <AgregarClima
                 onSubmit={this.obtieneClima}
