@@ -6,7 +6,8 @@ import configuraTienda from './tienda/configuraTienda';
 import 'normalize.css/normalize.css';
 import './estilos/styles.scss';
 import './firebase/firebase';
-
+import Promesa from './playground/Promesa';
+import Plegable from './playground/Plegable';
 
 const tienda = configuraTienda();
 

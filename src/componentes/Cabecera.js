@@ -30,18 +30,13 @@ const Cabecera = (props) => (
           <i 
           className="fa fa-angle-down fa-5x" 
           aria-hidden="true"> </i>
-          
-              
-        
         </div>
-        
         <div className='espacio-cabecera'></div>
         
       <Background 
       className="custom-bg">
           <img src={stars} />
       </Background>
-      
       
     </Parallax>
   </div>
@@ -50,5 +45,5 @@ export default Cabecera;
 
 // hola mi nomrbe es
 Cabecera.defaultProps = {
-titulo: 'Gerardo Bautista',
- };
+titulo: 'Una página WEB'
+}

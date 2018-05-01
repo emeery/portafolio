@@ -14,16 +14,19 @@ class Nav extends React.Component {
             to="/"> <h1>Biografía</h1>
           </NavLink></li>
           
-          
-          
           <li><NavLink 
-            to="/contacto"> <h1>Contacto</h1>
+            to="/pronostico"> <h1>Pronóstico</h1>
           </NavLink></li>
-        
+
           <li><NavLink 
             to="/experiencia"> <h1>Experiencia</h1>
           </NavLink></li>
-          </ul>
+
+          <li><NavLink 
+            to="/contacto"> <h1>Contacto</h1>
+          </NavLink></li>          
+          
+        </ul>
       </nav>
       );
   }

@@ -1,16 +1,72 @@
-// AgregarClima.js
-.contenedor__agregar-clima {
-    text-align: center;
-    width: 200px;
-    ::placeholder { 
-        color: lightgoldenrodyellow;
-    }
-}
+// CLima.js
 .contenedor__clima {
-    margin-top: -21px;
+    
     background-color: $negro;
+    
+    border-width: 5px;
+    border-style: solid;
+    border-color:  indianred;
+    overflow: auto;
 
     h1 { color: whitesmoke; 
-        font-family: $dosis; }
-    p {color: lightgoldenrodyellow; }
+        font-family: $dosis; 
+        text-align: center; 
+        
+    }
+
+    a { color: darkcyan;
+        font-family: $anton;
+        text-align: center;
+        font-size: 3rem;
+    }
+    // a:link {
+    //     color: green;
+    //     background-color: transparent;
+    //     text-decoration: none;
+    // }
+    
+    // a:visited {
+    //     color: pink;
+    //     background-color: transparent;
+    //     text-decoration: none;
+    // }
+    a:active {
+        color: yellow;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+    a:hover {
+        color: lightblue;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+    button {
+        background:$dark-cyan;
+        color: #fff;
+        opacity:1;
+        font-size: 20px;
+        height: 60px;
+        width: 150px;
+        line-height: 60px;
+        margin: 25px 25px;
+        text-align: center;
+        border: 0;
+        transition: all 0.3s ease 0s;
+        font-family: $anton;
+        button:hover {
+            opacity: 0.75;
+        }
+    }
+    
 }
+
+// input > AgregarClima
+.entrada-clima {
+    color: whitesmoke;
+    width:200px;
+    font-family: $anton;
+    font-size: 2rem;
+    height: 300px;
+}
+// style={{,color:'whitesmoke'}}
+

@@ -8,10 +8,17 @@ import AgregarClima
 
     class Clima extends React.Component {
         state = {error: 'un error' }
-        
         render() {
-        return(<div className='contenedor__clima'>
-                <h1>El pronostico de hoy ?</h1>
+            var estilo = {
+                borderWidth: '5px',
+                borderStyle: 'solid',
+                borderColor:  'indianred',
+                overflow: 'auto'
+            }
+        return(<div 
+                style={estilo}
+                className='contenedor__clima'>
+                <h1>El PRONOSTICO ?</h1>
                 <AgregarClima
                 onSubmit={this.obtieneClima}
                 />
