@@ -2,8 +2,9 @@
     nav { background-color: $negro; }
     li > a {color:lightcyan;
             text-decoration: none;
-            
-            border-style: none;}
+            border-style: none;
+        }
+    h3 {text-align: center; }
 }
 .nav-contenedor {
     a:active { 
@@ -14,4 +15,29 @@
         outline: none !important; 
         // -moz-outline-style: none !important; 
     }
+}
+.nav-contenedor {
+    .fa-github {color:lightblue; 
+        &:hover {color: lightgreen; }
+    }
+    .fa-jsfiddle {color:lightblue; 
+        &:hover {color: lightgreen; }
+    }
+    .fa-codepen {color:lightblue; 
+        &:hover {color: lightgreen; }
+    }
+}
+.nav-contenedor {
+    hr{
+        width: 150px;
+        //text-align: left;
+        padding-left: 50px;
+        //margin-top: 3px;
+        margin: auto;
+        float: center;
+        border: 0; 
+        height: 2px;
+        //background: orangered;
+        background-image: linear-gradient(to right, #ccc, $negro, #ccc);
+      }
 }

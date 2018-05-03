@@ -36,6 +36,17 @@ class Nav extends React.Component {
       <li><NavLink 
         to="/contacto"> <h3 >Contacto</h3>
       </NavLink></li> 
+        <hr/>
+        <center>
+      <a  href="https://github.com/emeery/portafolio" target="_blank" aria-hidden="true">
+      <i className="fab fa-github fa-1x"></i></a>
+      &nbsp;
+      <a href="https://jsfiddle.net/emeery/qjg4p1dy/" target="_blank" aria-hidden="true">
+      <i className="fab fa-jsfiddle" aria-hidden="true"></i></a>
+      &nbsp;
+      <a href="https://codepen.io/Emeeery/#"  target="_blank" aria-hidden="true">
+      <i className="fab fa-codepen fa-1x" aria-hidden="true"></i></a>
+        </center>
         
         </Menu>
       

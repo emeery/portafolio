@@ -58,11 +58,7 @@ class Experiencia extends React.Component {
           <h5 className="card-title"> Herramientas</h5>
           <p className="card-text">GIT, BASH, HEROKU, VS CODE</p>
           <p className="card-text">INGLÉS : TÉCNICO</p>
-          <center>
-            <a  href="https://github.com/emeery/portafolio" target="_blank" aria-hidden="true">
-            <i className="fab fa-github fa-3x"></i>
-            </a>
-          </center>
+          
       </div>
     </div>
       
