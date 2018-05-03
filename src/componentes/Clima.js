@@ -12,7 +12,7 @@ import AgregarClima
             var estilo = {
                 borderWidth: '5px',
                 borderStyle: 'solid',
-                borderColor:  'indianred',
+                borderColor:  '#2c3e50',
                 overflow: 'auto'
             }
         return(<div 

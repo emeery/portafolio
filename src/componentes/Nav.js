@@ -15,10 +15,12 @@ class Nav extends React.Component {
   }
   render() {
     return ( 
-      <div className='nav-contenedor'>
-      <nav>
+      <div 
       
-        <Menu>
+      className='nav-contenedor'>
+      <nav >
+      
+        <Menu >
         
       <li><NavLink 
         to="/"> <h3>Biografía</h3>
@@ -46,6 +48,8 @@ class Nav extends React.Component {
       &nbsp;
       <a href="https://codepen.io/Emeeery/#"  target="_blank" aria-hidden="true">
       <i className="fab fa-codepen fa-1x" aria-hidden="true"></i></a>
+        
+        <p className='logo-jerry'>© 2018 Jerry MB</p>
         </center>
         
         </Menu>

@@ -3,7 +3,7 @@
     color:whitesmoke; 
     background:$negro; 
     padding: $talla-s 0;
-    margin-bottom: $talla-xs;
+    margin-bottom: $talla-l;
     height: 35rem;
     //background-image: url(./../imagenes/beach.jpg);
     background-position: center;
@@ -11,12 +11,15 @@
 }    
 .cabecera__info {
     text-align: center;
-    margin-top: 5rem
-    //position: relative;
+    padding-top: 15rem;
+    
+}
+.fa-angle-down {
+    padding-top: -10rem;
 }
 .cabecera__titulo {
     font-size: $talla-xl; 
-    color:lightblue;
+    color:lightblue; 
     font-family: $oswald;
     margin: 0px; 
 }

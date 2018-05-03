@@ -14,10 +14,10 @@ const Cabecera = (props) => (
     >
         <Nav/>
         <div className='cabecera__info' >
-          <Fade left delay={3000}>
+          
             <h1 className='cabecera__titulo'
               > { props.titulo } </h1> 
-          </Fade>  
+          
           <Fade right delay={2000}>
                   <hr></hr>
           </Fade>

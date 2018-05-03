@@ -1,5 +1,13 @@
 .nav-contenedor {
-    nav { background-color: $negro; }
+    nav { 
+        background-color: $negro; 
+        border-width: 5px;
+        border-style: solid;
+        border-bottom-color: indianred;
+    }
+    // nav {
+    //     
+    // }
     li > a {color:lightcyan;
             text-decoration: none;
             border-style: none;
@@ -18,13 +26,13 @@
 }
 .nav-contenedor {
     .fa-github {color:lightblue; 
-        &:hover {color: lightgreen; }
+        &:hover {color: lightseagreen; }
     }
     .fa-jsfiddle {color:lightblue; 
-        &:hover {color: lightgreen; }
+        &:hover {color: lightseagreen; }
     }
     .fa-codepen {color:lightblue; 
-        &:hover {color: lightgreen; }
+        &:hover {color:lightseagreen; }
     }
 }
 .nav-contenedor {
@@ -39,5 +47,10 @@
         height: 2px;
         //background: orangered;
         background-image: linear-gradient(to right, #ccc, $negro, #ccc);
-      }
+      }    
+}
+.logo-jerry {
+    color:#34495e;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
