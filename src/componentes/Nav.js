@@ -1,77 +1,63 @@
 import React from 'react';
 import rocket from '../imagenes/rocket.png';
 import {
-  BrowserRouter, Switch, Route, Link, NavLink} from 'react-router-dom';
-
+  BrowserRouter, Switch, Route, Link, NavLink} 
+from 'react-router-dom';
+import {slide as Menu} from 'react-burger-menu';
 class Nav extends React.Component {
+  constructor() {
+    super();
+    this.state = {isOpen:false}
+  }
+  showSettings = (e) => {
+    e.preventDefault();
+    this.setState({isOpen:!this.state.isOpen });
+  }
   render() {
     return ( 
+      <div className='nav-contenedor'>
+      <nav>
       
-      <nav className='transparent'>
-        <ul>
-          
-          <li><NavLink 
-            to="/"> <h1>Biografía</h1>
-          </NavLink></li>
-          
-          <li><NavLink 
-            to="/pronostico"> <h1>Pronóstico</h1>
-          </NavLink></li>
+        <Menu>
+        
+      <li><NavLink 
+        to="/"> <h3>Biografía</h3>
+      </NavLink></li>
+      
+      <li><NavLink 
+        className='enlace-item'
+        to="/experiencia"> <h3>Experiencia</h3>
+      </NavLink></li>
 
-          <li><NavLink 
-            to="/experiencia"> <h1>Experiencia</h1>
-          </NavLink></li>
+      <li><NavLink 
+        to="/pronostico"><h3>Pronostico</h3>
+      </NavLink></li>
 
-          <li><NavLink 
-            to="/contacto"> <h1>Contacto</h1>
-          </NavLink></li>          
-          
-        </ul>
+      <li><NavLink 
+        to="/contacto"> <h3 >Contacto</h3>
+      </NavLink></li> 
+        
+        </Menu>
+      
       </nav>
+      </div>  
       );
   }
 }; export default Nav;
 
 
-// <nav className='transparent'>
-//           <div className="nav-wrapper transparent">
-//                 <img className='nav-logo' src={rocket} alt={"logo cohete"} />
-                
-//                 <button type="button" className=" right navbar-toggle collapsed" data-toggle="collapse" data-target="#extra-nav" aria-expanded="false">
-//                 <span className="sr-only">Toggle navigation</span>
-//                 <span className="icon-bar"></span>
-//                 <span className="icon-bar"></span>
-//                 <span className="icon-bar"></span>
-//               </button>
-//             <ul 
-//             id="nav-mobile" 
-//             className="right hide-on-med-and-down" >
-                  
-                  
-//                   <li>
-//                     <p className="navbar-brand">
-//                       <NavLink 
-//                         to="/"> Biografía 
-//                       </NavLink>
-//                     </p> 
-//                   </li>
-                 
-//                   <li>
-//                     <p>
-//                       <NavLink 
-//                         to="/experiencia" > Experiencia
-//                       </NavLink>
-//                     </p> 
-//                   </li>
-                  
-//                   <li>
-//                     <p>
-//                       <NavLink 
-//                         to="/contacto" > Contacto
-//                       </NavLink>
-//                     </p> 
-//                   </li>
-                  
-//             </ul>
-//           </div>
-//         </nav>
+
+// <a className="navbar-brand" href="#">Navbar</a>
+// <div class="pos-f-t">
+//   <div class="collapse" id="navbarToggleExternalContent">
+//     <div class="bg-dark p-4">
+//       <h4 class="text-white">Collapsed content</h4>
+//       <span class="text-muted">Toggleable via the navbar brand.</span>
+//     </div>
+//   </div>
+//   <nav class="navbar navbar-dark bg-dark">
+//     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+//       <span class="navbar-toggler-icon"></span>
+//     </button>
+//   </nav>
+// </div>

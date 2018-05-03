@@ -23,8 +23,8 @@ export const basedatos = firebase.database();
 //   }];
 
 basedatos.ref().set({
-    id: 'jajajaja',
-    ciudad: 'Mexico City',
+    id: '1234567',
+    ciudad: 'Ciudad de México',
     pais: 'Mexico'
 });
 
