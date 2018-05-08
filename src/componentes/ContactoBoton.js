@@ -15,7 +15,7 @@ class ContactoBoton extends React.Component {
                     type="button" >
                     
                     <p className="card-text-correo"> 
-            gerardobautista40<span>@</span>outlook.com.</p></button>
+            gerardobautista40<span>@</span>outlook.coms</p></button>
                 </center>
             </div>
                 
