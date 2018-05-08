@@ -5,52 +5,51 @@
         border-style: solid;
         border-bottom-color: indianred;
     }
-    // nav {
-    //     
-    // }
-    li > a {color:lightcyan;
-            text-decoration: none;
-            border-style: none;
-        }
-    h3 {text-align: center; }
+    
 }
-.nav-contenedor {
-    a:active { 
-        outline: none !important; 
-        // -moz-outline-style: none !important; 
-    }
-    a:focus { 
-        outline: none !important; 
-        // -moz-outline-style: none !important; 
+.nav-contenedor__enlaces {
+    .enlace {
+        color: #2e4053;
+        text-decoration: none;
+        outline: none;
     }
 }
-.nav-contenedor {
-    .fa-github {color:lightblue; 
-        &:hover {color: lightseagreen; }
-    }
-    .fa-jsfiddle {color:lightblue; 
-        &:hover {color: lightseagreen; }
-    }
-    .fa-codepen {color:lightblue; 
-        &:hover {color:lightseagreen; }
+// iconos 
+.fa-github {
+    color:lightblue; 
+    &:hover {
+        color: lightseagreen; 
     }
 }
-.nav-contenedor {
-    hr{
+.fa-angle-right {
+    color: lightseagreen;
+}
+.fa-jsfiddle {
+    color:lightblue; 
+}
+.fa-codepen {
+    color:lightblue; 
+    &:hover {
+        color:lightseagreen; 
+    }
+}
+// barra
+.nav-contenedor__barra {
+    hr {
         width: 150px;
-        //text-align: left;
         padding-left: 50px;
-        //margin-top: 3px;
         margin: auto;
         float: center;
         border: 0; 
         height: 2px;
-        //background: orangered;
         background-image: linear-gradient(to right, #ccc, $negro, #ccc);
-      }    
+    }    
 }
-.logo-jerry {
-    color:#34495e;
-    font-size: 1.5rem;
-    cursor: pointer;
+// 
+.nav-contenedor__logo-jerry {
+    p {
+        color:#34495e;
+        font-size: 1.5rem;
+        margin-bottom:15rem;    
+    }
 }

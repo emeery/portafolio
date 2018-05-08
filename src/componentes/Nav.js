@@ -1,19 +1,23 @@
 import React from 'react';
 import rocket from '../imagenes/rocket.png';
 import {
-  BrowserRouter, Switch, Route, Link, NavLink} 
+  BrowserRouter, Switch, Route, Link, NavLink } 
 from 'react-router-dom';
 import {slide as Menu} from 'react-burger-menu';
 class Nav extends React.Component {
   constructor() {
     super();
-    this.state = {unMenu:false}
+    this.state = { unMenu:false }
   }
   mostrarMenu = () => {
-    this.setState({unMenu:!this.state.unMenu})
+    this.setState({
+      unMenu:!this.state.unMenu
+    })
   }
   esconderMenu = () => {
-    this.setState({unMenu:this.state.unMenu})
+    this.setState({
+      unMenu:this.state.unMenu
+    })
   }
   render() {
     return ( 
@@ -23,27 +27,67 @@ class Nav extends React.Component {
         <Menu
         isOpen={this.state.unMenu}
         >
-        
-              <li><NavLink
-                to="/"
-                onClick={this.esconderMenu}
-                > <h3> Biografía </h3>
-              </NavLink></li>
-              
-              <li><NavLink 
-                className='enlace-item'
-                to="/experiencia"> <h3> Experiencia </h3>
-              </NavLink></li>
+              <div 
+              className="nav-contenedor__enlaces"
+              >
+                  <NavLink
+                  className='enlace'  
+                    to="/"
+                    onClick={this.esconderMenu}> 
+                    <h3> 
+                      <i 
+                        className="fas fa-angle-right" > 
+                      </i>
+                      &nbsp;
+                    Biografía 
+                    </h3>
+                  </NavLink>
+                  
+                  
+                
+                  <NavLink
+                  className='enlace'
+                    to="/experiencia">
+                    <h3>
+                      <i 
+                      className="fas fa-angle-right" > 
+                      </i>
+                      &nbsp;
+                      Experiencia 
+                    </h3>
+                  </NavLink> 
+                  
+                  <NavLink 
+                    className='enlace'
+                    to="/pronostico">
+                    <h3>
+                        <i 
+                        className="fas fa-angle-right" > 
+                        </i>
+                        &nbsp;
+                      Pronostico 
+                    </h3>
+                  </NavLink> 
+                  
 
-              <li><NavLink 
-                to="/pronostico"> <h3> Pronostico </h3>
-              </NavLink></li>
 
-              <li><NavLink 
-                to="/contacto"> <h3> Contacto </h3>
-              </NavLink></li> 
+                  <NavLink 
+                    className='enlace'
+                    to="/email">
+                    <h3>
+                        <i 
+                        className="fas fa-angle-right" > 
+                        </i>
+                        &nbsp;
+                      Email 
+                    </h3>
+                  </NavLink> 
+              </div>
+
               
-              <hr/>
+              <hr
+              className='nav-contenedor__barra'
+              />
               
               <center>
                 <a  
@@ -68,11 +112,15 @@ class Nav extends React.Component {
                 target="_blank" 
                 aria-hidden="true">
                 <i 
-                className="fab fa-codepen fa-1x" aria-hidden="true"></i></a>
+                className="fab fa-codepen fa-1x" 
+                aria-hidden="true"
+                > </i></a>
               
-                <p 
-                className="logo-jerry"
-                > © 2018 Jerry MB.</p>
+                <div 
+                className="nav-contenedor__logo-jerry"
+                > <p> © 2018 Jerry MB. </p>
+                </div>
+                
               </center>
         
         </Menu>
@@ -81,40 +129,8 @@ class Nav extends React.Component {
       </div>  
       );
   }
-}; export default Nav;
+} 
+export default Nav;
 
 
 
-// <a className="navbar-brand" href="#">Navbar</a>
-// <div class="pos-f-t">
-//   <div class="collapse" id="navbarToggleExternalContent">
-//     <div class="bg-dark p-4">
-//       <h4 class="text-white">Collapsed content</h4>
-//       <span class="text-muted">Toggleable via the navbar brand.</span>
-//     </div>
-//   </div>
-//   <nav class="navbar navbar-dark bg-dark">
-//     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-//       <span class="navbar-toggler-icon"></span>
-//     </button>
-//   </nav>
-// </div>
-
-
-
-
-
-// <a className="navbar-brand" href="#">Navbar</a>
-// <div class="pos-f-t">
-//   <div class="collapse" id="navbarToggleExternalContent">
-//     <div class="bg-dark p-4">
-//       <h4 class="text-white">Collapsed content</h4>
-//       <span class="text-muted">Toggleable via the navbar brand.</span>
-//     </div>
-//   </div>
-//   <nav class="navbar navbar-dark bg-dark">
-//     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-//       <span class="navbar-toggler-icon"></span>
-//     </button>
-//   </nav>
-// </div>
