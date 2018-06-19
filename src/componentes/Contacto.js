@@ -7,7 +7,7 @@ class Email extends React.Component {
         return(
             <div className='contenedor-contacto'>
 
-            <ContactoBoton
+            <ContactoBoton  
             handleClick={this.props.cargaColor}
             color={this.props.color}
             />
