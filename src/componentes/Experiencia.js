@@ -17,7 +17,7 @@ class Experiencia extends React.Component {
               <center>
               <i className="far fa-building fa-5x"></i>
               </center>
-            <h5 className="card-title">Ultimo Empleo</h5>
+            <h5 className="card-title">Empleo</h5>
             <p className="card-text"> 
               {this.state.empresa} </p>
             <p className="card-text"> 
