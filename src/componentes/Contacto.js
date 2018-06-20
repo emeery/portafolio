@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import * as creadorAcciones from '../acciones/colores.js' 
+import * as creadorAcciones from '../acciones/Colores.js' 
 
 class Email extends React.Component {
     render() {
