@@ -1,6 +1,9 @@
 {
   "name": "portafolio",
   "version": "1.0.0",
+  "engines": {
+    "node": "8.9.1"
+  },
   "main": "index.js",
   "author": "Gerardo Bautista",
   "license": "MIT",
