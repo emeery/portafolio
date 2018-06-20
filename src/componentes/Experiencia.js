@@ -55,7 +55,6 @@ class Experiencia extends React.Component {
         </div>
         </div>
       
-
     </div> 
         );
     }
