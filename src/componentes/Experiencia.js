@@ -1,14 +1,7 @@
 import React from 'react';
 
 class Experiencia extends React.Component {
-    
-    state = { 
-      empresa: 'BBVA',
-      posicion: 'ANALISTA/PROGRAMADOR, FRONT-END',
-      periodo: 'JUNIO/17 - ENERO/2018'
-    }
-   
-    render() {
+     render() {
         return (
 <div className="card-deck">
     
@@ -62,9 +55,8 @@ class Experiencia extends React.Component {
         </div>
         </div>
       
-    
-          
-       </div> 
+
+    </div> 
         );
     }
 }; export default Experiencia;

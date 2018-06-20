@@ -1,7 +1,6 @@
-import React from 'react'
+import React from 'react';
 import ClimaInfo from '../componentes/ClimaInfo';
-import basedatos from '../firebase/firebase';
-import axios from 'axios';
+//import basedatos from '../firebase/firebase';
 const API_KEY = "a3de5cffde10c377d199699b3da6fc6f";
 
 class AgregaClima extends React.Component {
