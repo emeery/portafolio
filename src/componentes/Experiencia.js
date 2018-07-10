@@ -8,7 +8,7 @@ class Experiencia extends React.Component {
         <div className="card">
         <div className="card-body">
                 <center>
-                  <i className="fa fa-folder-open fa-5x" 
+                  <i className="fa fa-folder-open fa-5x"
                   aria-hidden="true"></i>
                 </center>
               <h5 className="card-title"> Lenguajes</h5>
