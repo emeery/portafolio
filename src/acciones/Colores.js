@@ -1,5 +1,5 @@
 import axios from 'axios';
-
+//
 export function cargaColor() {
     const URL = '//www.colr.org/json/color/random';
     return(dispatch)=>{
