@@ -1,8 +1,6 @@
 import React from 'react';
 import rocket from '../imagenes/rocket.png';
-import {
-  BrowserRouter, Switch, Route, Link, NavLink } 
-from 'react-router-dom';
+import {BrowserRouter, Switch, Route, Link, NavLink } from 'react-router-dom';
 import {slide as Menu} from 'react-burger-menu';
 class Nav extends React.Component {
   constructor() {

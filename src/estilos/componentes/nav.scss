@@ -1,11 +1,15 @@
-.nav-contenedor {
-    nav { 
-        background-color: $negro; 
-        border-width: 5px;
-        border-style: solid;
-        border-bottom-color: indianred;
-    }
-    
+.nav-contenedor nav {  
+    background-color: $negro; 
+    border-width: 5px;
+    border-style: solid;
+    border-bottom-color: indianred;   
+}
+.nav-contenedor .bm-burger-button {
+    position: fixed; 
+    width: 36px; 
+    height: 30px; 
+    left: 36px; 
+    top: 20px;
 }
 .nav-contenedor__enlaces {
     .enlace {

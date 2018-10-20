@@ -3,7 +3,7 @@ class Biografia extends React.Component {
     
     state = { 
       nombre: 'GERARDO MANUEL BAUTISTA',
-      edad: 27,
+      edad: 28,
       estudios: 'INGENIERIO EN COMPUTACIÓN'
     }
    
