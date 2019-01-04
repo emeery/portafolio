@@ -13,9 +13,7 @@ class Plegable extends React.Component {
             <div className="content">
                 <div className="panel-group">
                     <Collapsible title="Biografia">
-                        <p>Cuando tenía seis años, vi una vez una imagen magnífica en un 
-                        libro sobre la Selva Virgen que se llamaba "Historias Vividas". Representaba una 
-                        serpiente boa que tragaba una fiera. He aquí la copia del dibujo.</p>
+                        <p>Biografia.</p>
                     </Collapsible>
                     <Collapsible title="Contacto">
                         <p>Anim pariatur cliche reprehenderit, 
